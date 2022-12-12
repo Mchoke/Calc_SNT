@@ -8,7 +8,7 @@ getBtn.onclick = () => {
     let valueNumStart = parseInt(getNumStart.value);
     let valueNumEnd = parseInt(getNumEnd.value);
     if(valueNumStart >= valueNumEnd) {
-        alert('Mời bạn nhập lại số');
+        alert('Mời thằng chim ngắn nhập lại số');
     }
     for (let i = valueNumStart; i <= valueNumEnd ; i++) {
         arrSNT.push(i);
@@ -41,7 +41,7 @@ getBtn.onclick = () => {
             resultArrSNT.push(arrSNT[i]);
         }
     }
-    document.getElementById('SNTArr').innerHTML = `Mảng số nguyên tố lấy từ số bạn đã nhập: [${resultArrSNT}]`
+    document.getElementById('SNTArr').innerHTML = `Mảng số nguyên tố lấy từ số thằng chim ngắn đã nhập: [${resultArrSNT}]`
     if(valueNumStart >= valueNumEnd) {
         document.getElementById('StartArr').innerHTML = "";
         document.getElementById('SNTArr').innerHTML = "";
